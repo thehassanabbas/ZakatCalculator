@@ -4,57 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 Using Promt</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #F9DA88;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-size: 40px;
-            color: #AC2432;
-        }
-
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #AC2432;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 18px !important;
-        }
-    </style>
-
+    <title>Zakat Calculator Using Promt</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
     <footer class="footer">This Zakat Calculator is developed by Hassan Abbas.</footer>
-    <script>
 
-        zakatNisaab = 1821645;
-        name = prompt("Enter Your Name");
-        totalWealth = prompt("Enter your Total Wealth");
-        debt = prompt("Enter the amount of debt on you");
-
-        netWealth = totalWealth - debt;
-
-        if (netWealth >= zakatNisaab) {
-            let zakat = netWealth * 0.025;
-            document.write(name + " Aap pr Rs." + zakat.toFixed(2) + " zakat wajib ha... ")
-        } else {
-            document.write(name + " Zakat isn't farz on you right now :)")
-        }
-
-
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
